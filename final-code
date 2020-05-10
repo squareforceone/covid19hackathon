@@ -1,0 +1,27 @@
+m = folium.Map(
+   location=[48, -102],
+    zoom_start=3,
+    tiles='OpenStreetMap'
+)
+
+tooltip = 'Click me!'
+
+# the lat long data has to be copied from the source on google maps 
+folium.Marker([21, -157], popup='<i>Canned Meat, 2/26/20</i>', tooltip=tooltip).add_to(m)
+folium.Marker([38.80601, -77.17532], popup='<b>Pasta, 2/28/20</b>', tooltip=tooltip).add_to(m)
+folium.Marker([37.80601, -122.17532], popup='<b>Fresh Fruit, 3/2/2020</b>', tooltip=tooltip).add_to(m)
+folium.Marker([37.80601, -122.40], popup='<b>Ramen, 3/11/2020</b>', tooltip=tooltip).add_to(m)
+folium.Marker([41.738, -111.836], popup='<b>Grocery staples, 3/11/2020</b>', tooltip=tooltip).add_to(m)
+folium.Marker([37.700, -122.400], popup='<b>Flour, 3/12/2020</b>', tooltip=tooltip).add_to(m)
+folium.Marker([43.070, -89.410], popup='<b>Beer, 3/12/2020</b>', tooltip=tooltip).add_to(m)
+folium.Marker([40.716, -74.012], popup='<b>Canned Goods, 3/12/2020</b>', tooltip=tooltip).add_to(m)
+folium.Marker([40.715, -73.9], popup='<b>Pasta, 3/12/2020</b>', tooltip=tooltip).add_to(m)
+folium.Marker([38.903, -77.027], popup='<b>Grocery staples, 3/12/2020</b>', tooltip=tooltip).add_to(m)
+folium.Marker([39.000, -77.065], popup='<b>Eggs, 3/12/2020</b>', tooltip=tooltip).add_to(m)
+folium.Marker([38.906, -77.038], popup='<b>Eggs Unavailable, 3/12/2020</b>', tooltip=tooltip).add_to(m)
+folium.Marker([38.912, -77.031], popup='<b>Grocery staples, 3/12/2020</b>', tooltip=tooltip).add_to(m)
+folium.Marker([44.962, -93.311], popup='<b>Canned soup, 3/12/2020</b>', tooltip=tooltip).add_to(m)
+folium.Marker([45.125, -93.212], popup='<b>Meat, 3/12/2020</b>', tooltip=tooltip).add_to(m)
+folium.Marker([45.055, -93.486], popup='<b>Pasta, 3/12/2020</b>', tooltip=tooltip).add_to(m)
+
+m
